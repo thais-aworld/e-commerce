@@ -54,6 +54,6 @@ npm dev run
 Projeto sob licença MIT — consulte o arquivo LICENSE para detalhes.
 ---
 
-## 📬 Desenvolvedo por:
+## 📬 Desenvolvido por:
 Thaís de Souza Amorim
 (https://github.com/thais-aworld)
