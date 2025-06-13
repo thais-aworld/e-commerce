@@ -28,6 +28,7 @@ Funcionalidades:
 
 ## 🚀 Tecnologias utilizadas
 
+- JavaScript XML
 - React (create‑react‑app ou Vite)  
 - React Router v6 (navegação entre páginas)  
 - CSS customizado  
