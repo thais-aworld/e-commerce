@@ -1,18 +1,15 @@
 ## Drip‑Store - E-commerce
-
-# License: https://img.shields.io/github/license/thais-aworld/e-commerce
 ---
 
 ## 📋 Sumário
 
 - Sobre o projeto
 - Tecnologias
-- Estrutura do projeto
 - Instalação e uso
 - Roteiro de navegação
 - Licença
 - Desenvolvedor
-
+---
 
 ## 📚 Descrição
 
@@ -27,7 +24,6 @@ Funcionalidades:
 - Carrinho de compras
 - Página "Meus Pedidos" 
 - 404 para páginas não encontradas  
-
 ---
 
 ## 🚀 Tecnologias utilizadas
@@ -37,48 +33,7 @@ Funcionalidades:
 - CSS customizado  
 - Estado com React Hooks (`useState`, `useEffect`)  
 - Importação de assets (imagem, GIF 404)  
-
 ---
-
-## 🧩 Estrutura do projeto
-
-public/
-├── icons
-├── images
-src/
-├── assets/ 
-├── components/
-| ├── BuyBox/
-│ ├── FilterGroup/
-| ├── Footer/
-| ├── Gallery/
-| ├── Header/
-| ├── Logo/
-| ├── ProductCard/
-| ├── ProductListing/
-| ├── ProductOptions/
-| ├── Section/
-| ├── SearchSuggestions/
-├──pages/
-
-│ ├── CartPage/
-│ ├── HomePage/
-│ ├── Layout/
-│ ├── LoginPage/
-│ ├── MyOrdersPage/
-│ └── NotFoundPage/
-│ ├── ProductListingPage/
-│ ├── ProductViewPage/
-│ ├── RegisterPage/
-│ └── SearchPage/
-├── App.css
-├── App.jsx 
-├── index.css
-├── index.jsx
-├── main.jsx
-└── style.css
-
-
 
 ## 🚀 Instalação e uso
 
@@ -93,11 +48,12 @@ npm install
 
 # Inicializando projeto
 npm dev run
-
+---
 
 ## 📝 Licença
 Projeto sob licença MIT — consulte o arquivo LICENSE para detalhes.
+---
 
 ## 📬 Desenvolvedo por:
 Thaís de Souza Amorim
-GITHUB: https://github.com/thais-aworld
+(https://github.com/thais-aworld)
