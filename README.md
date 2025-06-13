@@ -1,8 +1,6 @@
 ## Drip‑Store - E-commerce
 
-! License: https://img.shields.io/github/license/thais-aworld/e-commerce
-! Deployment:
-! Version https://img.shields.io/badge/version-1.0.0-green
+# License: https://img.shields.io/github/license/thais-aworld/e-commerce
 ---
 
 ## 📋 Sumário
@@ -13,7 +11,7 @@
 - Instalação e uso
 - Roteiro de navegação
 - Licença
-- Desenvolvedora
+- Desenvolvedor
 
 
 ## 📚 Descrição
@@ -100,6 +98,6 @@ npm dev run
 ## 📝 Licença
 Projeto sob licença MIT — consulte o arquivo LICENSE para detalhes.
 
-## 📬 Desenvolvedora
+## 📬 Desenvolvedo por:
 Thaís de Souza Amorim
 GITHUB: https://github.com/thais-aworld
