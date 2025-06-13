@@ -1,0 +1,427 @@
+
+:root {
+    --primary: #C92071;
+    --secondary: #C92071;
+    --dark-text: #1E1E1E;
+    --light-text: #555555;
+    --white: #FFFFFF;
+    --light-gray: #F5F5F5;
+    --border-color: #E0E0E0;
+    --spacing-xs: 5px;
+    --spacing-sm: 10px;
+    --spacing-md: 20px;
+    --spacing-lg: 30px;
+    --spacing-xl: 50px;
+}
+
+.content-wrapper {
+    max-width: 1200px; 
+    margin: 0 auto; 
+    padding: 0 var(--spacing-md); 
+}
+
+.section-title {
+    font-size: 32px;
+    font-weight: 800;
+    color: var(--dark-text);
+    text-align: center;
+    margin-bottom: var(--spacing-xl);
+}
+
+.btn-primary {
+    display: inline-block;
+    background-color: var(--primary);
+    color: var(--white);
+    padding: var(--spacing-sm) var(--spacing-md);
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.btn-primary:hover {
+    background-color: darken(var(--primary), 10%); 
+    transform: translateY(-2px);
+}
+
+.btn-secondary {
+    display: inline-block;
+    background-color: var(--secondary);
+    color: var(--white);
+    padding: var(--spacing-sm) var(--spacing-md);
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.btn-secondary:hover {
+    background-color: darken(var(--secondary), 10%); 
+    transform: translateY(-2px);
+}
+
+.home-page-container {
+    padding: var(--spacing-lg) 0; 
+}
+
+.main-banner-section {
+    background-color: var(--transparent);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: var(--spacing-xl) var(--spacing-lg);
+    position: relative;
+    overflow: hidden;
+    border-radius: 12px;
+    margin-bottom: var(--spacing-xl);
+    box-shadow: 0 5px 20px rgb(250, 248, 248);
+}
+
+.main-banner-content {
+    flex: 0,8;
+    max-width: 40%;
+    padding-right: var(--spacing-lg);
+    z-index: 1;
+}
+
+.main-banner-subtitle {
+    font-size: 16px;
+    color: var(--primary);
+    font-weight: 700;
+    display: flex; 
+    align-items: center;
+    margin-bottom: var(--spacing-sm);
+    text-transform: uppercase;
+}
+
+.main-banner-subtitle span {
+    margin-left: 5px;
+}
+
+.main-banner-title {
+    font-size: 50px;
+    font-weight: 700;
+    color: var(--dark-text);
+    margin-bottom: var(--spacing-md);
+    line-height: 1.1;
+}
+
+.main-banner-title span {
+    color: var(--primary);
+}
+
+.main-banner-description {
+    font-size: 16px;
+    color: var(--light-text);
+    margin-bottom: var(--spacing-xl);
+    line-height: 1.7;
+    text-align: left; 
+    max-width: 450px; 
+    text-align: center e max-width;
+}
+
+.main-banner-image-container {
+    flex: 1;
+    height: 550px;
+    overflow: hidden;
+    position: relative;
+    display: center; 
+    align-items: center; 
+    justify-content: center; 
+}
+
+.main-banner-image {
+    position: absolute;
+    top: 1;
+    left: 1;
+    width: 80%;
+    height: 80%;
+    object-fit: contain; 
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+    z-index: 1; 
+    transform: rotate(-10deg);
+}
+
+.main-banner-image.active {
+    opacity: 1;
+    z-index: 2; 
+}
+
+.main-banner-dots {
+    position: absolute;
+    bottom: 40px; 
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: var(--spacing-xs);
+    z-index: 3; 
+}
+
+.main-banner-dots .dot {
+    width: 10px;
+    height: 10px;
+    background-color: rgba(0, 0, 0, 0.2);
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.main-banner-dots .dot.active {
+    background-color: var(--primary);
+}
+
+.main-banner-section::before {
+    content: '';
+    position: absolute;
+    top: 60px;
+    right: 60px;
+    width: 100px;
+    height: 100px;
+    background-image: radial-gradient(circle, var(--primary) 0%, transparent 20%);
+    background-size: 20px 20px;
+    opacity: 0.2;
+    z-index: 0;
+}
+
+.highlighted-collections-section {
+    margin-bottom: var(--spacing-xl);
+}
+
+.highlighted-collections {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: var(--spacing-lg);
+    margin-top: var(--spacing-xl);
+}
+
+.highlighted-collections img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.highlighted-collections img:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+.collections-icons-section {
+    margin-top: var(--spacing-xl);
+    margin-bottom: var(--spacing-xl);
+}
+
+.collections-icons {
+    display: flex;
+    justify-content: center;
+    gap: var(--spacing-xl);
+    margin-top: var(--spacing-xl);
+    flex-wrap: wrap;
+}
+
+.collection-icon-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    cursor: pointer;
+    transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.collection-icon-item:hover {
+    transform: translateY(-8px);
+}
+
+.collection-icon-item img {
+    width: 70px;
+    height: 70px;
+    margin-bottom: var(--spacing-sm);
+    filter: grayscale(100%) brightness(0.8);
+    transition: filter 0.3s ease;
+}
+
+.collection-icon-item:hover img {
+    filter: brightness(0) saturate(100%) invert(21%) sepia(92%) saturate(747%) hue-rotate(306deg) brightness(96%) contrast(85%);
+}
+
+
+.collection-icon-item span {
+    font-size: 16px;
+    font-weight: 600;
+    color: var(--dark-text);
+    white-space: nowrap;
+}
+
+.fashion-highlight-section {
+    background-color: var(--transparent);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: var(--spacing-xl) var(--spacing-lg);
+    position: relative;
+    overflow: hidden;
+    border-radius: 12px;
+    margin-bottom: var(--spacing-xl);
+    box-shadow: 0 5px 20px rgba(247, 247, 247, 0.961);
+    width: 100%;
+    height: 450px;
+}
+
+.fashion-highlight-content {
+    flex: 1;
+    max-width: 45%;
+    padding-right: var(--spacing-lg);
+    z-index: 1;
+}
+
+.fashion-highlight-subtitle {
+    font-size: 16px;
+    color: var(--secondary);
+    font-weight: 700;
+    display: block;
+    margin-bottom: var(--spacing-sm);
+    text-transform: uppercase;
+}
+
+.fashion-highlight-title {
+    font-size: 52px;
+    font-weight: 900;
+    color: var(--dark-text);
+    margin-bottom: var(--spacing-md);
+    line-height: 1.1;
+}
+
+.fashion-highlight-description {
+    font-size: 16px;
+    color: var(--light-text);
+    margin-bottom: var(--spacing-xl);
+    line-height: 1.7;
+}
+
+.fashion-highlight-image-wrapper {
+    flex: 1;
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    position: relative;
+    padding-right: var(--spacing-lg);
+}
+
+.fashion-highlight-circle {
+    position: absolute;
+    width: 390px; 
+    height: 390px; 
+    background-color: #d674c726; 
+    border-radius: 50%;
+    z-index: 0; 
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%); 
+}
+
+.fashion-highlight-main-image {
+    width: 500px;
+    height: auto;
+    transform: rotate(5deg);
+    filter: drop-shadow(10px 10px 20px rgba(0,0,0,0.25));
+    z-index: 1; 
+    position: relative;
+    left: -20px;
+}
+
+@media (max-width: 1024px) {
+    .main-banner-section,
+    .fashion-highlight-section {
+        flex-direction: column;
+        text-align: center;
+        padding: var(--spacing-xl) var(--spacing-md);
+    }
+
+    .main-banner-content,
+    .fashion-highlight-content {
+        max-width: 100%;
+        padding-right: 0;
+        margin-bottom: var(--spacing-lg);
+    }
+
+    .main-banner-image-container,
+    .fashion-highlight-image-wrapper {
+        justify-content: center;
+        padding-left: 0;
+        padding-right: 0;
+        margin-top: var(--spacing-md);
+    }
+
+    .main-banner-title,
+    .fashion-highlight-title {
+        font-size: 44px;
+    }
+
+    .main-banner-section::before {
+        display: none;
+    }
+}
+
+@media (max-width: 768px) {
+    .highlighted-collections {
+        grid-template-columns: 1fr;
+        gap: var(--spacing-md);
+    }
+
+    .collections-icons {
+        gap: var(--spacing-md);
+    }
+
+    .collection-icon-item img {
+        width: 60px;
+        height: 60px;
+    }
+
+    .main-banner-title,
+    .fashion-highlight-title {
+        font-size: 36px;
+    }
+
+    .fashion-highlight-circle {
+        width: 300px;
+        height: 300px;
+    }
+}
+
+@media (max-width: 480px) {
+    .main-banner-section,
+    .fashion-highlight-section {
+        padding: var(--spacing-lg) var(--spacing-sm);
+    }
+
+    .main-banner-title,
+    .fashion-highlight-title {
+        font-size: 30px;
+    }
+
+    .main-banner-description,
+    .fashion-highlight-description {
+        font-size: 14px;
+    }
+
+    .highlighted-collections {
+        gap: var(--spacing-sm);
+    }
+
+    .collections-icons {
+        gap: var(--spacing-sm);
+    }
+
+    .collection-icon-item img {
+        width: 50px;
+        height: 50px;
+    }
+
+    .fashion-highlight-circle {
+        width: 200px;
+        height: 200px;
+    }
+}

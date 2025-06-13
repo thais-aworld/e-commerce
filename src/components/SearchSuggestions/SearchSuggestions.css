@@ -1,0 +1,21 @@
+.suggestions-list {
+  border: 1px solid #ccc;
+  max-width: 400px;
+  padding: 0;
+  margin: 0;
+  position: absolute;
+  background: white;
+  z-index: 10;
+  width: 100%;
+  list-style: none;
+}
+
+.suggestions-list li {
+  padding: 0.5rem;
+  cursor: pointer;
+}
+
+.suggestions-list li.active,
+.suggestions-list li:hover {
+  background-color: #f0f0f0;
+}

@@ -1,0 +1,152 @@
+/* src/index.css ou src/global.css */
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap');
+
+:root {
+  --primary: #C92071; 
+  --secondary: #C92071; 
+  --dark-text: #333333; 
+  --light-text: #666666; 
+  --gray-bg: #F8F8F8; 
+  --white: #FFFFFF;
+  --border-color: #E0E0E0; 
+  --discount-tag-bg: #F6AA1C; 
+  --footer-bg: #333333; 
+  --footer-text: #CCCCCC; 
+
+  /* Espaçamentos comuns */
+  --spacing-xs: 8px;
+  --spacing-sm: 15px;
+  --spacing-md: 20px;
+  --spacing-lg: 40px;
+  --spacing-xl: 60px;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  color: var(--dark-text);
+  background-color: var(--gray-bg); /* Fundo da página */
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  transition: color 0.2s ease-in-out;
+}
+
+a:hover {
+  color: var(--primary); /* Hover padrão para links */
+}
+
+ul {
+  list-style: none;
+}
+
+button {
+  border: none;
+  background: none;
+  cursor: pointer;
+  padding: 0;
+}
+
+/* Container de largura máxima para o conteúdo principal */
+.content-wrapper {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0 var(--spacing-lg); /* Padding nas laterais */
+}
+
+/* Botão padrão (se houver um componente de botão) */
+.btn-primary {
+  background-color: var(--primary);
+  color: var(--white);
+  padding: 14px 35px; /* Ajustado para um botão maior */
+  border-radius: 30px; /* Ajustado para mais arredondado */
+  font-weight: 700;
+  font-size: 17px;
+  transition: background-color 0.3s ease;
+  box-shadow: 0 4px 10px rgba(255, 87, 34, 0.3); /* Sombra para destacar */
+}
+
+.btn-primary:hover {
+  background-color: #fffdfe; /* Um pouco mais escuro */
+}
+
+.btn-secondary { /* Adicionando um estilo para o botão secundário (roxo) */
+  background-color: var(--secondary);
+  color: var(--white);
+  padding: 14px 35px;
+  border-radius: 30px;
+  font-weight: 700;
+  font-size: 17px;
+  transition: background-color 0.3s ease;
+  box-shadow: 0 4px 10px rgba(155, 81, 224, 0.3);
+}
+
+.btn-secondary:hover {
+  background-color: #fffdfe;
+}
+
+/* Títulos de Seção Comuns */
+.section-title {
+  font-size: 38px;
+  font-weight: 800;
+  color: var(--dark-text);
+  text-align: center;
+  margin-bottom: var(--spacing-xl); /* Espaço maior abaixo do título */
+}
+
+.section-header { /* Para títulos com link "Ver todos" */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: var(--spacing-xl);
+}
+
+.section-header h2 {
+  font-size: 38px;
+  font-weight: 800;
+  color: var(--dark-text);
+}
+
+.section-header .see-all-link {
+  color: var(--primary);
+  font-weight: 600;
+  font-size: 16px;
+  white-space: nowrap;
+}
+
+/* Responsividade para títulos e botões globais */
+@media (max-width: 768px) {
+  .section-title, .section-header h2 {
+    font-size: 30px;
+    margin-bottom: var(--spacing-lg);
+  }
+  .btn-primary, .btn-secondary {
+    padding: 12px 30px;
+    font-size: 15px;
+  }
+  .section-header .see-all-link {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  .section-title, .section-header h2 {
+    font-size: 26px;
+    margin-bottom: var(--spacing-md);
+  }
+  .btn-primary, .btn-secondary {
+    padding: 10px 25px;
+    font-size: 14px;
+  }
+}
