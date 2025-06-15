@@ -37,16 +37,16 @@ Funcionalidades:
 
 ## 🚀 Instalação e uso
 
-# Clonar o repositório:
+## Clonar o repositório:
 git clone https://github.com/thais-aworld/ecommerce-project.git
 
-# Entrar na pasta:
+## Entrar na pasta:
 cd e-commerce
 
-# Instalar dependências
+## Instalar dependências
 npm install
 
-# Inicializando projeto
+## Inicializando projeto
 npm dev run
 ----
 
