@@ -52,3 +52,4 @@ npm dev run
 
 ## 📬 Desenvolvido por:
 Thaís de Souza Amorim (https://github.com/thais-aworld)
+----
