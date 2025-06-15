@@ -1,4 +1,4 @@
-## Drip‑Store - E-commerce
+## E-commerce 
 https://ecommerce-project-mu-mocha.vercel.app/
 
 # 📋 Sumário
