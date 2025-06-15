@@ -1,7 +1,7 @@
 ## E-commerce 
 https://ecommerce-project-mu-mocha.vercel.app/
 
-# 📋 Sumário
+## 📋 Sumário
 ----
 
 - Sobre o projeto
@@ -38,7 +38,7 @@ Funcionalidades:
 ## 🚀 Instalação e uso
 
 # Clonar o repositório:
-git clone https://github.com/thais-aworld/e-commerce.git
+git clone https://github.com/thais-aworld/ecommerce-project.git
 
 # Entrar na pasta:
 cd e-commerce
@@ -51,5 +51,6 @@ npm dev run
 ----
 
 ## 📬 Desenvolvido por:
-Thaís de Souza Amorim (https://github.com/thais-aworld)
+Thaís de Souza Amorim 
+https://github.com/thais-aworld
 ----
