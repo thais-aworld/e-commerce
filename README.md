@@ -1,13 +1,9 @@
 ## E-commerce 
----
 ````
 https://ecommerce-project-mu-mocha.vercel.app/
 ````
----
-
 
 ## 📋 Sumário
----
 ````
 - Sobre o projeto
 - Tecnologias
@@ -15,10 +11,8 @@ https://ecommerce-project-mu-mocha.vercel.app/
 - Roteiro de navegação
 - Desenvolvedor
 ````
----
 
 ## 📚 Descrição
----
 Projeto de front-end para uma loja virtual, proposto pela Geração Tech como avaliação de aprendizagem para o curso de Desenvolvimento Full Stack - Geração Tech. 
 Funcionalidades:
 ````
@@ -31,10 +25,9 @@ Funcionalidades:
 - Página "Meus Pedidos"
 - 404 para páginas não encontradas
 ````
----
 
 ## 🚀 Tecnologias utilizadas
----
+
 ````
 - JavaScript XML
 - React (create‑react‑app ou Vite)
@@ -43,10 +36,9 @@ Funcionalidades:
 - Estado com React Hooks ( useState, useEffect)
 - Importação de ativos (imagem, GIF 404)
 ````
----
 
 ## 🚀 Instalação e uso
----
+
 - Clonar o repositório:
 ````
 git clone https://github.com/thais-aworld/ecommerce-project.git
@@ -72,4 +64,4 @@ Thaís Amorim
 ````
 https://github.com/thais-aworld
 ````
-----
+
