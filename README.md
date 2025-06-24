@@ -51,9 +51,9 @@ npm install
 - Inicializando projeto
 npm dev run
 ----
-----
+
 ## 📬 Desenvolvido por:
 
-Thaís de Souza Amorim 
+Thaís Amorim 
 https://github.com/thais-aworld
 ----
