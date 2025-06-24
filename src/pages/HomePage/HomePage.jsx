@@ -131,7 +131,7 @@ const HomePage = () => {
           <span className="fashion-highlight-subtitle">DESTAQUE FASHION</span>
           <h2 className="fashion-highlight-title">Air Jordan edição de colecionador</h2>
           <p className="fashion-highlight-description">
-            Experimente o legado de Michael Jordan com o Nike Air Jordan, um sínbolo de estilo e desempenho. Combine moda e funcionalidade com um design que atravessa gerações e continua a ser um dos tênis mais desejados do mundo.
+            Experimente o legado de Michael Jordan com o Nike Air Jordan, um símbolo de estilo e desempenho. Combine moda e funcionalidade com um design que atravessa gerações e continua a ser um dos tênis mais desejados do mundo.
           </p>
           <Link to="/products?category=airjordan" className="fashion-highlight-button btn-secondary">
             Ver Ofertas
